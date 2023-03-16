@@ -2,6 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 
+import storageUtil from "./utils/storageUtiles";
+import memoryUtil from "./utils/memoryUtils";
+
+const user = storageUtil.getUser()
+memoryUtil.user = user
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
